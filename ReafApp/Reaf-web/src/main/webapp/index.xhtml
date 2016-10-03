@@ -1,0 +1,78 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Reaf Marketing, Gift Card Sales, Cincinnati OH</title>
+<style type="text/css">
+body {
+	background-color: #f1f2f2;
+}
+
+#home {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-decoration:none;
+	color: #F6761D;
+}
+table td { font-size: 0px; }
+</style>
+<link href="css/reaf.css" rel="stylesheet" type="text/css" />
+<link href="css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h:form id="cardForm">
+<div align="center">
+<table  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+    <div style="width:998px"  ><img src="images/Home_top.jpg" width="998" height="29" style="display:block"/></div>
+<div style="width:998px; background-image:url(images/back.gif); background-repeat:repeat-y" >
+  <table width="955" border="0" cellspacing="0" cellpadding="0" align="center">
+   <tr> <td><div style="padding:12px; float:left"><img src="images/logo.gif" alt="Reaf Marketing Corporate Gift Card Sales" width="131" height="99" /></div> 
+        <div style="margin-right:25px; float:right; margin-top:92px; width:570px" ><div class="nav"><a href="index.xhtml" id="home">Home</a></div>
+<div class="nav"> <a href="services.xhtml" id="services">Services</a> </div>
+<div class="nav"><a href="clients.xhtml" id="clients">Clients</a> </div>
+<div class="nav"><a href="about.xhtml" id="about">About Us</a> </div>
+<div class="nav"><a href="contact.xhtml" id="contact" >Contact Us</a></div></div>
+</td></tr>
+    <tr>
+      <td><img src="images/home_03.gif" width="379" height="363" /><img src="images/home_04.gif" alt="At Reaf Marketing, selling and marketing gift cards to businesses is our world. In fact, it's all we do." width="576" height="363" usemap="#imgmap"/></td>
+    </tr>
+   
+        <tr>
+      <td height="200px" valign="top" bgcolor="#F6761D"><div style="padding:25px">
+        <h2>Our reason for being: B2B Gift Card Sales</h2></div></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#3A3A3C" height="60px" align="right" style="padding-right:15px"><div class="footer">Copyright 2014 Reaf Marketing</div></td>
+    </tr>
+  </table>
+</div>
+<div style="width:998px" ><img src="images/home_bottom.jpg" width="998" height="29" /></div>
+</td>
+  </tr>
+</table>
+ </div>
+<h:inputHidden id="name" value="#{cardGiftController.name}" /> 
+<h:commandLink id="link" action="#{cardGiftController.onCardGift()}" value="click" style="display:none"/>
+</h:form>  
+<map name="imgmap">
+    <area shape="poly" title="Red Robin" coords="16,199,17,264,110,266,109,202" href="javascript:openPage()" onclick="action('Red Robin');" />
+    <area shape="poly" title="GAP" coords="161,208,162,254,210,255,209,209" href="javascript:openPage()" onclick="action('GAP');" />
+    <area shape="poly" title="Golfsmith" coords="267,213,268,244,413,246,413,215" href="javascript:openPage()" onclick="action('Golfsmith');" />
+    <area shape="poly" title="Caribou Coffee" coords="466,271,464,190,540,187,541,274" href="javascript:openPage()" onclick="action('Caribou Coffee');" />
+    <area shape="poly" title="Shutterfly" coords="89,291,88,336,218,334,218,291" href="javascript:openPage()" onclick="action('Shutterfly');" />
+    <area shape="poly" title="NIKE" coords="252,293,254,333,376,337,373,292" href="javascript:openPage()" onclick="action('NIKE');" />
+    <area shape="poly" title="GROUPON" coords="404,291,406,334,509,333,504,290" href="javascript:openPage()" onclick="action('GROUPON');" />
+</map>
+<script type="text/javascript">
+	function action(giftCard){
+		document.getElementById('cardForm:name').value = giftCard;
+		var jsfCommandLink = document.getElementById("cardForm:link");
+	    jsfCommandLink.click();
+	}
+</script>
+</body>
+</html>
